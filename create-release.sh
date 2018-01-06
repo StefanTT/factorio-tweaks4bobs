@@ -33,5 +33,6 @@ cd /tmp || die "Cannot chdir into /tmp"
 echo "Creating zip archive $RELEASE_ARCHIVE"
 zip -r "$ABS_RELEASE_ARCHIVE" "$RELEASE_NAME" || die "Cannot create zip archive $ABS_RELEASE_ARCHIVE"
 
+rm -r "$RELEASE_DIR"
 echo "done"
 
